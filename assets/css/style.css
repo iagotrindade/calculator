@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(222, 26%, 31%);
+}
+
+.section-area-calc {
+    width: 540px;
+    margin: auto;
+}
+
+.section-area-calc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    height: 60px;
+}
+
+.section-area-calc-header-left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.section-area-calc-header-left h2{
+    font-family: 'Spartan';
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+.section-area-calc-header-right {
+    display: grid;
+    grid-template-areas:
+    ". item1"
+    "item2 item3";
+}
+
+.section-area-calc-header-right-theme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 25px 0 0;
+    font-family: 'Spartan';
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    grid-area: item2;
+
+}
+
+.section-area-calc-header-right-theme p {
+    margin: 0;
+}
+
+.section-area-calc-header-right-theme-number {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: item1;
+    padding-bottom: 10px
+}
+
+.section-area-calc-header-right-theme-buttons {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.section-area-calc-header-right-theme-number {
+    font-family: 'Spartan';
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.section-area-calc-header-right-theme-buttons {
+    width: 70px;
+    height: 22px;
+    border-radius: 90px;
+    background-color: hsl(223, 31%, 20%);
+    grid-area: item3;
+}
+.section-area-calc-header-right-theme-toggle {
+    width: 15px;
+    height: 15px;
+    border-radius: 90px;
+    background-color: hsl(6, 63%, 50%);
+}
+
+.section-area-calc-display {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 130px;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 15px;
+    margin-bottom: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.section-area-calc-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Spartan';
+    font-weight: 700;
+    font-size: 50px;
+    margin-right: 25px;
+}
+
+.section-area-calc-buttons-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 15px;
+}
+
+.section-area-calc-buttons {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-areas:
+    "n7 n8 n9 tDel"
+    "n4 n5 n6 tMore"
+    "n1 n2 n3 tMinus"
+    "tPoint n0 tBar tEx"
+    "tReset tReset tResult tResult";
+    padding: 30px;
+}
+
+.section-area-calc-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 60px;
+    font-family: 'Spartan';
+    font-weight: 700;
+    font-size: 30px;
+    color: hsl(221, 14%, 31%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0px 4px rgb(178, 164, 154);
+    cursor: pointer;
+}
+
+.n0 {
+    grid-area: n0;
+    cursor: pointer;
+}
+
+.n1 {
+    grid-area: n1;
+    cursor: pointer;
+}
+
+.n2 {
+    grid-area: n2;
+    cursor: pointer;
+}
+
+.n3 {
+    grid-area: n3;
+    cursor: pointer;
+}
+
+.n4 {
+    grid-area: n4;
+    cursor: pointer;
+}
+
+.n5 {
+    grid-area: n5;
+    cursor: pointer;
+}
+
+.n6 {
+    grid-area: n6;
+    cursor: pointer;
+}
+
+.n7 {
+    grid-area: n7;
+    cursor: pointer;
+}
+
+.n8 {
+    grid-area: n8;
+    cursor: pointer;
+}
+
+.n9 {
+    grid-area: n9;
+    cursor: pointer;
+}
+
+.tDel {
+    font-size: 20px;
+    background-color:hsl(225, 21%, 49%);
+    box-shadow: 0px 4px hsl(224, 28%, 35%);
+    color:rgb(255, 255, 255);
+    grid-area: tDel;
+    cursor: pointer;
+}
+
+.tMore {
+    grid-area: tMore;
+    cursor: pointer;
+}
+
+.tMinus {
+    grid-area: tMinus;
+    cursor: pointer;
+}
+
+.tPoint {
+    grid-area: tPoint;
+    cursor: pointer;
+}
+
+.tBar {
+    grid-area: tBar;
+    cursor: pointer;
+}
+
+.tEx {
+    grid-area: tEx;
+    cursor: pointer;
+}
+
+.tReset {
+    grid-area: tReset;
+    width: 225px;
+    font-size: 20px;
+    background-color:hsl(225, 21%, 49%);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 4px hsl(224, 28%, 35%);
+    cursor: pointer;
+}
+
+.tResult {
+    grid-area: tResult;
+    width: 225px;
+    color: rgb(255, 255, 255);
+    background-color:hsl(6, 63%, 50%);
+    box-shadow: 0px 4px hsl(6, 70%, 34%);
+    cursor: pointer;
+}
+
+.second, .third {
+    display: none;
+}
